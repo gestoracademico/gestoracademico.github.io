@@ -7,20 +7,6 @@
 </head>
 <body>
   <div id="root"></div>
-  <script type="module">
-    import React from 'https://unpkg.com/react@17/umd/react.production.min.js';
-    import ReactDOM from 'https://unpkg.com/react-dom@17/umd/react-dom.production.min.js';
-    import { BrowserRouter, Routes, Route } from 'https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js';
-    import App from './src/App.js';
-
-    const rootElement = document.getElementById('root');
-    ReactDOM.createRoot(rootElement).render(
-      <BrowserRouter basename="/gestoracademico.github.io">
-        <Routes>
-          <Route path="/" element={<App />} />
-        </Routes>
-      </BrowserRouter>
-    );
-  </script>
+  <script src="dist/bundle.js"></script>
 </body>
 </html>
